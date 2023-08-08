@@ -5,6 +5,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const dbConnect = require("./db/dbConnect"); // require database connection
 const User = require("./db/userModel");
+const auth = require("./auth");
 
 // body parser configuration
 app.use(bodyParser.json());
