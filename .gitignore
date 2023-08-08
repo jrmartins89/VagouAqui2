@@ -107,3 +107,5 @@ dist
 /package-lock.json
 /.idea/VagouAqui3.iml
 /.idea/vcs.xml
+/.idea/git_toolbox_prj.xml
+/.idea/jsLibraryMappings.xml
