@@ -1,6 +1,9 @@
+const bcrypt = require("bcrypt");
 const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
+const dbConnect = require("./db/dbConnect"); // require database connection
+const User = require("./db/userModel");
 
 // body parser configuration
 app.use(bodyParser.json());
@@ -10,11 +13,11 @@ app.get("/", (request, response, next) => {
   response.json({ message: "Hey! This is your server response!" });
   next();
 });
-
-// require database connection
-const dbConnect = require("./db/dbConnect");
-
 // execute database connection
 dbConnect();
+
+app.post("/register", (request, response) => {
+
+});
 
 module.exports = app;
